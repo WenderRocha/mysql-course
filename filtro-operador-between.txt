@@ -1,0 +1,9 @@
+SELECT - FILTROS COM O OPERADOR BETWEEN (entre) PESQUISA DE INTERVALOS
+
+    SELECT * FROM tb_alunos WHERE idade >= 18 AND idade <= 21
+    SELECT * FROM tb_alunos WHERE idade BETWEEN 18 and 21
+
+    - selecione todos os alunos que tenha idade entre 18 e 21 anos.
+
+    SELECT * FROM tb_alunos WHERE data >= '2018-07-01' AND data <= '2018-07-31'
+    SELECT * FROM tb_alunos WHERE data BETWEEN '2018-07-01' AND '2018-07-31'

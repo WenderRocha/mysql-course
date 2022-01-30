@@ -1,0 +1,5 @@
+Criar banco de dados
+    - CREATE DATABASE course_mysql;
+
+Remover banco de dados
+    - DROP DATABASE course_mysql;
