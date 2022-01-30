@@ -28,7 +28,7 @@ SELECT * FROM `tb_alunos` WHERE nome LIKE '_ru_';
 
 SELECT * FROM `tb_alunos` WHERE nome LIKE 'I__';
 
-SELECT * FROM `tb_alunos` WHERE nome LIKE '%tt'
+SELECT * FROM `tb_alunos` WHERE nome LIKE '%tt_';
     - traga todos os registros onde exista a ocorrencia
      de qualquer caracter ou conjunto de caracter a esquerda seguido de 'tt'
       finalizando por qualquer caracter desde que seja apenas 1 a direita.
