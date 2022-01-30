@@ -1,0 +1,30 @@
+
+SELECT - FUNÇÕES DE AGREGAÇÃO: MAX, MIN E AVG
+
+MIN(<coluna>) - Retorna o MENOR valor de todos os registros com base em uma coluna.
+
+MAX(<coluna>) - Retorna o MAIOR valor de todos os registros com base em uma coluna.
+
+AVG(<coluna>) - Retorna a média de todos os registros com base em uma coluna.
+
+SELECT
+    funções de AGREGAÇÃO
+FROM
+    <tabela>
+WHERE
+    <filtro (s)>
+
+
+SELECT MIN(investimento) FROM `tb_cursos`;
+
+
+SELECT MIN(investimento) FROM `tb_cursos` WHERE ativo = true;
+
+
+SELECT MAX(investimento) FROM `tb_cursos` WHERE ativo = true;
+
+
+SELECT AVG(investimento) FROM `tb_cursos` WHERE ativo = true;
+
+
+
