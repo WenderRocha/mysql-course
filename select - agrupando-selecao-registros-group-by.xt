@@ -1,0 +1,33 @@
+
+SELECT - AGRUPANDO SELEÇÃO DE REGISTROS (GROUP BY)
+    - GROUP BY - Agrupa os registros com base em uma ou mais
+        colunas cujos valores sejam iguais permite realizar funções
+        de agregação em cada subconjunto agrupado de registros.
+
+SELECT
+    <coluna(s)>
+FROM 
+    <tabela>
+WHERE 
+    <filtro(s)>
+GROUP BY
+    agrupamento
+ORDER BY
+    <ordenacao>
+LIMIT 
+    <offset>,<limit>
+
+
+
+SELECT * FROM `tb_alunos` GROUP BY interesse;
+
+SELECT *, count(*) FROM `tb_alunos` GROUP BY interesse;
+
+SELECT interesse, count(*) FROM `tb_alunos` GROUP BY interesse;
+
+
+SELECT interesse, count(*) AS total_por_interesse FROM `tb_alunos` GROUP BY interesse;
+
+SELECT * FROM `tb_alunos` GROUP BY estado;
+
+SELECT estado, COUNT(*) AS total_por_interesse FROM `tb_alunos` WHERE estado = 'ES'; 
