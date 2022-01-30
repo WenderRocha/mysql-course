@@ -10,11 +10,25 @@ Caracteres curingas:
 SELECT * FROM `tb_alunos` WHERE nome = 'Evelyn';
 
 SELECT * FROM `tb_alunos` WHERE nome LIKE '%e';
+    - Traga todos os registros aonde exista a ocorrencia de qualquer conjunto de caracteres a esquerda que finalize com a letra e.
+
 SELECT * FROM `tb_alunos` WHERE nome LIKE '%ne';
+    - Traga todos os registros aonde exista a ocorrencia de qualquer conjunto de caracteres a esquerda que finalize com as letras ne.
+    
 SELECT * FROM `tb_alunos` WHERE nome LIKE '%a%';
+    - Traga todos os registros aonde exista a ocorrencia de qualquer conjunto de caracteres a esquerda
+      que possua em algum momento o caracter 'a' e termine com qualquer conjunto de caracteres a direita.
+
 SELECT * FROM `tb_alunos` WHERE nome LIKE 'C%';
 
 SELECT * FROM `tb_alunos` WHERE nome LIKE '_riel';
+    - traga todos os registro que contenha um caracter indefinido a esquerda seguido do caracteres 'riel' a direita.
+
 SELECT * FROM `tb_alunos` WHERE nome LIKE '_ru_';
 
 SELECT * FROM `tb_alunos` WHERE nome LIKE 'I__';
+
+SELECT * FROM `tb_alunos` WHERE nome LIKE '%tt'
+    - traga todos os registros onde exista a ocorrencia
+     de qualquer caracter ou conjunto de caracter a esquerda seguido de 'tt'
+      finalizando por qualquer caracter desde que seja apenas 1 a direita.
